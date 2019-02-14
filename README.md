@@ -1,12 +1,12 @@
-#CannonAttack
-##Text Based Game Demonstrating usage of Test Driven Development(TDD)
+# CannonAttack
+## Text Based Game Demonstrating usage of Test Driven Development(TDD)
 
 -----------------------------------------------------
 
 * Utilizes NUnit3 for tests
 * Written in C#
 
-##Overview
+## Overview
 -----------------------------------------------------
 CannonAttack is a simple text based game in which a player enters an 
 angle and velocity of a cannonball to hit a target at a given distance. 
@@ -14,7 +14,7 @@ The game uses a basic formula for calculating the trajectory of the
 cannonball (will be given) and the player keeps taking turns at shooting 
 at the target until it has been hit.
 
-##Requirements
+## Requirements
 -----------------------------------------------------
 1.	Windows Console Application; 
 2.	Player identified by an id, default is set to a constant "Human"; 
@@ -56,11 +56,11 @@ at the target until it has been hit.
 
 
 
-##Additional Feature
+## Additional Feature
 -----------------------------------------------------
 In addition to these requirements a new feature will be added that gives the cannon a chance to explode
 if the velocity entered by the user is deemed dangerous(Over 100000000) then the cannon will explode.
 
-##References
+## References
 -----------------------------------------------------
 [TDD Tutorial](https://www.c-sharpcorner.com/uploadfile/dommym/a-test-driven-development-tutorial-in-C-Sharp-4-0/)
