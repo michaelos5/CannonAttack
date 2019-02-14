@@ -1,12 +1,12 @@
-CannonAttack
-Text Based Game Demonstrating usage of Test Driven Development(TDD)
+#CannonAttack
+##Text Based Game Demonstrating usage of Test Driven Development(TDD)
 
 -----------------------------------------------------
 
----> Utilizes NUnit3 for tests
----> Written in C#
+* Utilizes NUnit3 for tests
+* Written in C#
 
-Overview
+##Overview
 -----------------------------------------------------
 CannonAttack is a simple text based game in which a player enters an 
 angle and velocity of a cannonball to hit a target at a given distance. 
@@ -14,7 +14,7 @@ The game uses a basic formula for calculating the trajectory of the
 cannonball (will be given) and the player keeps taking turns at shooting 
 at the target until it has been hit.
 
-Requirements
+##Requirements
 -----------------------------------------------------
 1.	Windows Console Application; 
 2.	Player identified by an id, default is set to a constant "Human"; 
@@ -23,9 +23,10 @@ Requirements
 5.	Target Distance is simply the distance of the Cannon to Target, and is created randomly by default but can be overridden; 
 6.	Angle and Speed needs to be validated (specifically not greater than 90 degrees and Speed not greater than speed of light); 
 7.	Max distance for target is 20000 meters; 
-8.	Base the algorithm for the calculation of the cannons trajectory upon the following C# code (distance and height is meters and velocity is meters per second):
-distance = velocity * Math.Cos(angleInRadians) * time;
-height = (velocity * Math.Sin(angleInRadians) * time) - (GRAVITY * Math.Pow(time, 2)) / 2; 
+8.	Base the algorithm for the calculation of the cannons trajectory 
+	upon the following C# code (distance and height is meters and velocity is meters per second):
+		distance = velocity * Math.Cos(angleInRadians) * time;
+		height = (velocity * Math.Sin(angleInRadians) * time) - (GRAVITY * Math.Pow(time, 2)) / 2; 
 9.	A hit occurs if the cannon is within 50m of the target; 
 10.	Display number of shots for a hit 
 11.	Game text will be similar to following: 
@@ -55,7 +56,11 @@ height = (velocity * Math.Sin(angleInRadians) * time) - (GRAVITY * Math.Pow(time
 
 
 
-Additional Feature
+##Additional Feature
 -----------------------------------------------------
 In addition to these requirements a new feature will be added that gives the cannon a chance to explode
 if the velocity entered by the user is deemed dangerous(Over 100000000) then the cannon will explode.
+
+##References
+-----------------------------------------------------
+[TDD Tutorial](https://www.c-sharpcorner.com/uploadfile/dommym/a-test-driven-development-tutorial-in-C-Sharp-4-0/)
